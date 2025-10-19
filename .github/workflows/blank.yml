@@ -18,8 +18,10 @@ jobs:
           distribution: temurin
           server-id: github
           settings-path: ${{ github.workspace }}
-
-      - name: Build and publish
+          
+      - name: Build and deploy comun
+        working-directory: ./P2_COMUN/comun
         run: mvn clean deploy -DskipTests
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
