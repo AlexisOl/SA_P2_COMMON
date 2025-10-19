@@ -1,4 +1,4 @@
-name: Publish Java Package
+name: Build and Deploy Comun
 
 on:
   push:
@@ -6,22 +6,25 @@ on:
       - main
 
 jobs:
-  build-and-publish:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
+      # 1️⃣ Clonar el repositorio
       - uses: actions/checkout@v3
 
+      # 2️⃣ Configurar Java 21
       - name: Set up JDK 21
         uses: actions/setup-java@v3
         with:
           java-version: 21
           distribution: temurin
-          server-id: github
+          server-id: github         
           settings-path: ${{ github.workspace }}
-          
-      - name: Build and deploy comun
-        working-directory: ./P2_COMUN/comun
+
+      # 3️⃣ Build y Deploy del módulo comun
+      - name: Build and Deploy Comun
+        working-directory: ./P2_COMUN/comun   
         run: mvn clean deploy -DskipTests
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          GITHUB_TOKEN: ${{ secrets.COMUN_SA }}  
