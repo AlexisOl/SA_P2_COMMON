@@ -24,4 +24,4 @@ jobs:
         working-directory: ./comun   
         run: mvn clean deploy -DskipTests
         env:
-          GITHUB_TOKEN: ${{ secrets.COMUN_SA }}  
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}  
