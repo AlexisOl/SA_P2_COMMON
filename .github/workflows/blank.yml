@@ -33,5 +33,5 @@ jobs:
                 </settings>" > $HOME/.m2/settings.xml
 
       - name: Build and Deploy Comun
-        working-directory: ./P2_COMUN/comun
+        working-directory: ./comun
         run: mvn clean deploy -DskipTests
