@@ -1,10 +1,10 @@
 
 
-package com.example.comun.DTO;
+package com.example.comun.DTO.FacturaAnuncio;
 
 
 import lombok.Data;
-import java.time.LocalDate;
+
 import java.util.UUID;
 
 @Data
