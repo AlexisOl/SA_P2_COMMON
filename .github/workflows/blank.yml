@@ -32,6 +32,10 @@ jobs:
                   </servers>
                 </settings>" > $HOME/.m2/settings.xml
 
+      - name: Update version dynamically
+        working-directory: ./comun
+        run: mvn versions:set -DnewVersion=1.0.${{ github.run_number }}-SNAPSHOT
+
       - name: Build and Deploy Comun
         working-directory: ./comun
         run: mvn clean deploy -DskipTests
