@@ -2,7 +2,7 @@ package com.example.comun.DTO.FacturaBoleto;
 
 
 import lombok.Data;
-
+import java.time.LocalDate;
 import java.util.UUID;
 
 @Data
