@@ -12,7 +12,7 @@ import java.util.UUID;
         private UUID funcionId;
         private Double montoTotal;
         private Integer cantidadBoletos;
-        private LocalDateTime fechaVenta;
+        private LocalDate fechaVenta;
         private String correlationId;
 }
 
