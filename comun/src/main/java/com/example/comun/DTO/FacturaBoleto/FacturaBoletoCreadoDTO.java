@@ -9,6 +9,7 @@ import java.util.UUID;
     public class FacturaBoletoCreadoDTO {
         private UUID ventaId;
         private UUID usuarioId;
+        private UUID idCine;
         private UUID funcionId;
         private Double montoTotal;
         private Integer cantidadBoletos;
