@@ -10,8 +10,8 @@ import java.util.UUID;
         private UUID userId;
         private Double monto;
         private String motivo;
-        private UUID funcionId;
-        private LocalDate fechaVenta;
+        private UUID factura;
+        private UUID ventaId;
         private String correlationId;
 }
 
