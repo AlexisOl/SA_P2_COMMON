@@ -7,6 +7,7 @@ import java.util.UUID;
 
 @Data
     public class CobroCineDTO {
+      private UUID factura;
       private UUID ventaId;
       private UUID idCine;
       private double costo;
