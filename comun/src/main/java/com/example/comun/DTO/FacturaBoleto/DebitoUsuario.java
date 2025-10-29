@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 @Data
-    public class FacturaBoletoCreadoDTO {
+    public class DebitoUsuario {
         private UUID userId;
         private Double monto;
         private String motivo;
