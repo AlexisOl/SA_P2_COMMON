@@ -7,7 +7,8 @@ import java.util.UUID;
 
 @Data
     public class RespuestaFacturaBoletoCreadoDTO {
-       private UUID ventaId;
+      private UUID factura;
+      private UUID ventaId;
       private boolean exito;
       private String motivoFallo;
       private String correlationId;
