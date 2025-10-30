@@ -10,6 +10,6 @@ public class SnackDTO {
     private UUID id;
     private String nombre;
     private Double precio;
-    private boolean existe
+    private boolean existe;
     private String correlationId;
 }
