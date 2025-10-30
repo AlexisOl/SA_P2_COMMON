@@ -7,7 +7,7 @@ import java.util.UUID;
 import java.util.List;
 
 @Data
-    public class FacturaBoletoCreadoDTO {
+    public class FacturaSnackCreadaDTO {
         private UUID ventaId;
         private UUID usuarioId;
         private UUID idCine;
