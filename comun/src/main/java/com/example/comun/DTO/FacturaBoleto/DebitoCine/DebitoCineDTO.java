@@ -9,5 +9,6 @@ import java.util.UUID;
     public class DebitoCineDTO {
         private Double monto;
         private String correlationId;
+         private UUID idCine;
 }
 
