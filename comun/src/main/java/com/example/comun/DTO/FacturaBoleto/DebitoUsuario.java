@@ -9,6 +9,7 @@ import java.util.UUID;
     public class DebitoUsuario {
         private UUID userId;
         private Double monto;
+        private UUID idCine;
         private String motivo;
         private UUID factura;
         private UUID ventaId;
