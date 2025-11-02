@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 @Data
-    public class PagoCines {
+    public class PagoCinesDTO {
         private UUID anuncioId;
         private UUID usuarioId;
         private UUID cindeId;
