@@ -12,6 +12,8 @@ import java.util.UUID;
         private UUID idAnuncio;
         private String motivo;
         private UUID factura;
+        private LocalDate fechainicio;
+        private LocalDate fechafin;
         private String correlationId;
 }
 
