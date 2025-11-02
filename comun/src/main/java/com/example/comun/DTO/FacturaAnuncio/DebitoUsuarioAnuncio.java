@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 @Data
-    public class DebitoUsuario {
+    public class DebitoUsuarioAnuncio {
         private UUID userId;
         private Double monto;
         private UUID idAnuncio;
