@@ -10,6 +10,7 @@ public class RespuestaFacturaAnuncioCreadaDTO {
       private UUID factura;
       private UUID anuncioId;
       private boolean exito;
+      private Double monto;
       private String motivoFallo;
       private String correlationId;
      private List<DiasDescuentoAnunciosBloqueados> dineroCines;
